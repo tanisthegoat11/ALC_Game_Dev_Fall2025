@@ -97,6 +97,8 @@ GameObject:
   - component: {fileID: 5519934529626522752}
   - component: {fileID: 7058141038324705263}
   - component: {fileID: 7640653307240754486}
+  - component: {fileID: 1282113610291113308}
+  - component: {fileID: 1473993941278495482}
   m_Layer: 0
   m_Name: Balloon_Red
   m_TagString: Untagged
@@ -120,6 +122,7 @@ Transform:
   - {fileID: 4790876891397623362}
   - {fileID: 4961956304054004301}
   - {fileID: 223072166146147277}
+  - {fileID: 4025979256525363713}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &7058141038324705263
@@ -172,6 +175,35 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1282113610291113308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027750025980042309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b06d423a9cfa764ab769363152c12de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &1473993941278495482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027750025980042309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31c17a5393c01e47b493fda7a0cf7f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickToPop: 3
+  scaleToIncrease: 0.4
+  scoreToGive: 0
+  popEffect: {fileID: 184618151051080486, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
 --- !u!1 &4988214313850245353
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,3 +376,65 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &8876253429226372697
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5519934529626522752}
+    m_Modifications:
+    - target: {fileID: 184618151051080486, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+      propertyPath: m_Name
+      value: Balloon POP Effect Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544476200747426904, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8259506
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544476200747426904, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.22337055
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544476200747426904, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.050438166
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544476200747426904, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544476200747426904, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544476200747426904, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544476200747426904, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544476200747426904, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544476200747426904, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544476200747426904, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+--- !u!4 &4025979256525363713 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5544476200747426904, guid: a560aafae0d0e3845a26feeb1d39b326, type: 3}
+  m_PrefabInstance: {fileID: 8876253429226372697}
+  m_PrefabAsset: {fileID: 0}

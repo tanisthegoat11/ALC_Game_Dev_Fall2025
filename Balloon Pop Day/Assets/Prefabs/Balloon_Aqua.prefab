@@ -269,6 +269,8 @@ GameObject:
   - component: {fileID: 7142991330264378945}
   - component: {fileID: 1795149649102045007}
   - component: {fileID: 3073980036380484604}
+  - component: {fileID: 1304539626828602782}
+  - component: {fileID: 3500952794306702122}
   m_Layer: 0
   m_Name: Balloon_Aqua
   m_TagString: Untagged
@@ -284,7 +286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8353106056635660117}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.43, y: 2.1639576, z: 6.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -292,6 +294,7 @@ Transform:
   - {fileID: 3270927183888951970}
   - {fileID: 6299356143228787466}
   - {fileID: 8223622612966825330}
+  - {fileID: 5181502478055038208}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1795149649102045007
@@ -344,3 +347,94 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1304539626828602782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8353106056635660117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b06d423a9cfa764ab769363152c12de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+--- !u!114 &3500952794306702122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8353106056635660117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31c17a5393c01e47b493fda7a0cf7f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickToPop: 3
+  scaleToIncrease: 0.4
+  scoreToGive: 0
+  popEffect: {fileID: 128026342597271227, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+--- !u!1001 &3746433138605105799
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7142991330264378945}
+    m_Modifications:
+    - target: {fileID: 128026342597271227, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+      propertyPath: m_Name
+      value: Balloon POP Effect Aqua
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364983421223174023, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5400009
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364983421223174023, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.285285
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364983421223174023, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.48200035
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364983421223174023, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364983421223174023, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364983421223174023, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364983421223174023, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364983421223174023, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364983421223174023, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364983421223174023, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+--- !u!4 &5181502478055038208 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8364983421223174023, guid: 85a7bda1ce423f947b196811e88968cc, type: 3}
+  m_PrefabInstance: {fileID: 3746433138605105799}
+  m_PrefabAsset: {fileID: 0}

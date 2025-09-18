@@ -8,14 +8,13 @@ public class Balloon : MonoBehaviour
     public float scaleToIncrease = 0.10f; //Scale increased each time the balloon is clicked
 
     public int scoreToGive; // Score given for the popped balloon.
-    private ScoreManager scoreManager; // A variable to reference the ScoreManger
+    private ScoreManager ScoreManager; // A variable to reference the ScoreManger
     public GameObject popEffect; //Reference Pop Effect Particle System
 
     void Start()
     {
-       scoreManager = GameObject.Find("ScoreManager").GetComponent<scoreManager>();
+       ScoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
     }
-
     void OnMouseDown()
     {
         // Reduce clicks by one
