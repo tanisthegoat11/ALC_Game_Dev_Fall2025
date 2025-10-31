@@ -13,10 +13,15 @@ public class PlayerController : MonoBehaviour
     public int bottomBound = -4;
     [Header("Score")]
     public int score;
-
+    public SpriteRenderer sr;
+    
+    
     public Rigidbody2D rig;
     public TextMeshProUGUI scoreText;
-
+    public void GameOver ()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
     public void AddScore (int amount)
     {
         score += amount;
@@ -50,8 +55,5 @@ public class PlayerController : MonoBehaviour
             isGrounded = true;
         }
     }
-    public void GameOver()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+    
 }
