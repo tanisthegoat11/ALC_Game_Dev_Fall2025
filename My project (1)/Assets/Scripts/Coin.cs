@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using system.Collections.Generic;
+using System.Collections.Generic;
 public class Coin : MonoBehaviour
 
 {
